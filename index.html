@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nike</title>
+		<link rel="shortcut icon" type="image/jpg" href="../nike/slike/favicon.jpg"/>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	</head>
+	<body>
+	
+		<div class="topnav">
+			<a class="znak" href=""><svg width="50" height="50"><path fill="white" stroke="white" stroke-width="1"
+        d="M 49.97,16.06
+           C 50.04,16.23 9.70,33.77 8.12,33.77M 49.97,16.06
+           C 49.97,16.06 14.02,25.79 14.02,25.79
+             8.15,27.47 2.72,25.55 6.37,17.09
+             1.52,22.38 -5.49,34.48 8.12,33.77" /></svg></a>
+			<a class="beseda" href="#jpg">SLIKA</a>
+			<a class="beseda" href="#svg">SVG</a>
+			<a class="beseda" href="#bezier">BEZIER</a>
+		</div>
+		
+		<div class="ozadje">
+			<table class="naslov">
+				<th class="nike-naslov">WE ARE NIKE</th>
+			</table>
+		</div>
+		
+		<div class="slika">
+		<table class="tabela">
+			<tr id="svg">
+				<th class="oznaka1">SVG:</th>
+				<td class="slika1">
+					<svg width="260" height="260">
+						<path
+						fill="black" stroke="black" stroke-width="1"
+						d="M 259.82,83.53
+						C 260.23,84.41 50.07,175.67 41.86,175.66M 259.82,83.51
+						C 259.82,83.51 72.90,134.12 72.90,134.12
+						42.40,142.87 14.15,132.87 33.15,88.87
+						7.91,116.38 -28.97,179.36 41.85,175.66" />
+					</svg>
+					</td>
+			</tr>
+			<tr class="crno">
+			<th colspan="2" class="belo">We are an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.</th>
+			</tr>
+			<tr id="jpg">
+				<th class="oznaka1">SLIKA:</th>
+				<td class="slika1"><img class="image" src="slike/favicon.jpg"></td>
+			</tr>
+			<tr class="crno">
+			<th colspan="2" class="belo">We are headquartered near Beaverton, Oregon, in the Portland metropolitan area. <br/><br/>Fun fact:<br/><br/> We we are the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports equipment.</th>
+			</tr>
+			<tr id="bezier">
+				<th class="oznaka1">BEZIER:</th>
+				<td class="slika1"><canvas id="canvas" width="600" height="300"></canvas>
+				<script>			
+				var canvas = document.getElementById("canvas");
+				var context = canvas.getContext("2d");
+			
+				context.beginPath();
+				context.moveTo(242, 150);
+				context.bezierCurveTo(162, 200, 212, 280, 402, 150);
+				context.bezierCurveTo(367, 160, 212, 240, 242, 150);
+					  
+					 
+				context.lineWidth = 1;
+				context.fillStyle="#000";
+				context.fill();
+				</script></td>
+			</tr>
+		</table>
+		</div>
+		<footer>Designed by: Jan Makuc, 2020</footer>
+	</body>
+</html>
